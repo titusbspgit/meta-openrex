@@ -11,7 +11,7 @@ at http://www.imx6rex.com/open-rex"
 
 LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://Licenses/README;md5=a2c678cfd4a4d97135585cad908541c6"
-COMPATIBLE_MACHINE = "(mxs|mx5|mx6|mx6ul|mx7|vf|imx6q-openrex)"
+COMPATIBLE_MACHINE = "(mxs|mx5|mx6|mx6ul|mx7|vf|imx6q-openrex|imx6s-openrex)"
 
 PROVIDES += "u-boot"
 
@@ -20,7 +20,7 @@ PV = "v2016.07+git${SRCPV}"
 SRCBRANCH ??= "krogoth"
 
 SRC_URI = "git://github.com/titusbspgit/openrex-uboot-v2016.07.git;branch=${SRCBRANCH}"
-SRCREV = "6b34b74f4b632bf6beb5e16ceed3e813221cf2d6"
+SRCREV = "43c8f63c91269342c74c641b8c3e3b5c5b81717b"
 
 S = "${WORKDIR}/git"
 

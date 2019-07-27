@@ -30,9 +30,9 @@ Copy and paste this into your Linux host machine
     <?xml version="1.0" encoding="UTF-8"?>
     <manifest>
      
-      <remote fetch="git://github.com/FEDEVEL" name="fedevel"/>
+      <remote fetch="git://github.com/titusbspgit" name="titusbspgit"/>
      
-      <project remote="fedevel" revision="jethro" name="meta-openrex" path="sources/meta-openrex">
+      <project remote="titusbspgit" revision="krogoth" name="meta-openrex" path="sources/meta-openrex">
         <copyfile src="openrex-setup.sh" dest="openrex-setup.sh"/>
       </project>
     </manifest>
@@ -52,6 +52,7 @@ Here is a list of 'machine names' which you can use to build OpenRex images. Use
  
  
     imx6q-openrex
+    imx6s-openrex
      
 ### Setup and Build Console image
     MACHINE=<machine name> source setup-environment build-openrex
@@ -62,6 +63,9 @@ Example:
  
     MACHINE=imx6q-openrex source setup-environment build-openrex
     MACHINE=imx6q-openrex bitbake core-image-base
+
+    MACHINE=imx6s-openrex source setup-environment build-openrex
+    MACHINE=imx6s-openrex bitbake core-image-base
  
 ### Setup and Build Toolchain    
     MACHINE=<machine name> bitbake core-image-base -c populate_sdk
@@ -85,5 +89,3 @@ To test your uBoot on SD card, plug in the card which you have just created into
     mw.l 0x020d8040 0x2840; mw.l 0x020d8044 0x10000000; reset
  
 # Updating OpenRex
-A
-TO

@@ -17,9 +17,9 @@ DEPENDS += "lzop-native bc-native"
 SRCBRANCH = "krogoth"
 LOCALVERSION = "-fslc"
 
-SRCREV = "322e65cb2245959ed270ae6cad6de489f9bdbe88"
+SRCREV = "e24083576043fc0d7a88a880c8831694864b1482"
 SRC_URI = "git://github.com/titusbspgit/openrex-linux-4.1.1.git;branch=${SRCBRANCH} \
            file://defconfig"
 
 #PV .= "+git${SRCPV}"
-COMPATIBLE_MACHINE = "(imx6q-openrex)"
+COMPATIBLE_MACHINE = "(imx6q-openrex|imx6s-openrex)"
